@@ -45,7 +45,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<!---start-header---->
 			<div id="page">
 					<div id="header">
-						<a class="navicon" href="#menu-left"> </a>
+						<a class="navicon" href="#"> </a>
 						<div class="logo">
 						<a href="index.html"><img src="https://app.organizer.com/img/organizer_logo.png" style="height:40px" alt="" /></a>
 						</div>
@@ -101,7 +101,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</div>
 		<!---//End-slider---->
 		<!---start-content---->
-		<div class="content">
+		<div class="content" onclick="pushAllLoadedGoalsToMainPage(goals, 'content', true)">
+		<div id= "content"></div>
 		<div class="content-top-grids">
 			<div class="wrap"> 
 				<div class="content-top-header">
@@ -355,6 +356,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		<!---//End-footer---->
 		<!---//End-wrap---->
 		 </div>
+		 <script type="text/javascript" src="load.js"></script>
 	</body>
 </html>
 
