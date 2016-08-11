@@ -1,25 +1,3 @@
-
-/*
-the goal is to create a way to hold the data for the events
-long term solution is cloud storage
-*/
-/*
-var Goal = function(name,startdate,enddate) {
-	this.name = name;
-	this.start = startdate;
-	this.end = enddate;
-};
-Goal.prototype.My_Name = function() {
-	return this.name;
-};
-Goal.prototype.My_Name
-mac = Goal("Mac Mostest", 5, 6);
-function addto() {
-	var r = name.concat(name1,name2);
-	document.getElementById("content").innerHTML = '<div class="goal"><h1 class="goal_name">'+ name +'</h1></div>';
-}
-*/
-
 //this list will hold the information for the goal, it starts empty but ends up completely filled
 //as the app goes on. We will be able to get this infromation from a file, delet it change it 
 var goalData = [
