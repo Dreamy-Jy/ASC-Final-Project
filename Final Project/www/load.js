@@ -136,5 +136,3 @@ function pushAllLoadedGoalsToMainPage(list_Of_Goals, put_In, idOrClass){
 	 var ender = '<div class="clear"> </div><a class="btn" href="iconsingle.html">More Goals</a></div></div>';
 	 pushToMainPage(ender,put_In,idOrClass);
 }
-
-loadpage
