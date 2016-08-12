@@ -137,3 +137,4 @@ function pushAllLoadedGoalsToMainPage(list_Of_Goals, put_In, idOrClass){
 	 pushToMainPage(ender,put_In,idOrClass);
 }
 
+loadpage

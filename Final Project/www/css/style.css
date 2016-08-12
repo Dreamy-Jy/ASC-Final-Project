@@ -75,6 +75,12 @@ body{
 	margin-top:5px;
 	display:block;
 }
+.addButton{
+	margin-bottom:200px;
+	margin-left:250px;
+
+	display:block;
+}
 .img-circle{
 	margin-left: 65px;
 	width: 40%;
