@@ -74,6 +74,13 @@ body{
 .logo a{
 	margin-top:5px;
 	display:block;
+	margin-left: 60px;
+}
+.addButton {
+	margin-top: 5px;
+	float: right;
+	height: 30px;
+	display: block;
 }
 .img-circle{
 	margin-left: 65px;
