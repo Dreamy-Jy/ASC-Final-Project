@@ -1,0 +1,16 @@
+h4 {
+	text-align: center;
+	font-size: 32px;
+	position: fixed;
+		left: 0px;
+		bottom: 0px;
+		height: 350px;
+		width: 100%;
+}
+p {
+	position: fixed;
+		left: 0px;
+		bottom: 0px;
+		height: 50px;
+		width: 100%;
+}

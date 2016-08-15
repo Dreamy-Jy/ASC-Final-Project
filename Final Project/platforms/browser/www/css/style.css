@@ -75,6 +75,17 @@ body{
 	margin-top:5px;
 	display:block;
 }
+.img-circle{
+	margin-left: 65px;
+	width: 40%;
+	border-radius: 50%;
+	border: 2px solid white;
+}
+nav ul h1{
+	text-align: center;
+	color: white;
+	font-size: 18px
+}
 .mm-menu li.img a{
 		font-size: 16px;
 	}
