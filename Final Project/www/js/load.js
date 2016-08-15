@@ -90,7 +90,7 @@ function FormateToHTML(goal) {
 	var end = getEnd(goal);
 	var decription = getDescription(goal);
 	/*var smart = will become the variable that get SMART goal once I figure out how to get it*/
-	return ('<div class="content-top-grids-box"><div class="content-top-grid"></div><div class="content-top-grid-title"><div class="content-top-grid-title-left"><h4><a href="iconsingle.html">'+name+'</a></h4><ul><li><a href="iconsingle.html">'+start+'-'+end+'</a></li><li><a href="iconsingle.html">Goal</a></li></ul></div><div class="content-top-grid-title-right"><a href="iconsingle.html"></a></div><div class="clear"> </div></div></div>');
+	return ('<div class="content-top-grids-box"><div class="content-top-grid"></div><div class="content-top-grid-title"><div class="content-top-grid-title-left"><h4><a href="viewGoal.html">'+name+'</a></h4><ul><li><a href="viewGoal.html">'+start+'-'+end+'</a></li><li><a href="viewGoal.html">Goal</a></li></ul></div><div class="content-top-grid-title-right"><a href="viewGoal.html"></a></div><div class="clear"> </div></div></div>');
 }
 
 //pushes the code formated to HTML to the index.html
