@@ -58,21 +58,22 @@ bunch of text - (Decription)
 list of step
 */
 
-var exampleGoal1 = ["Back to School Goal", "8/10/2016",
-					"8/12/2016", "This is a goal I'm setting to help me complete my goals for the school.",
+var exampleGoal1 = ["Buy a Present", "8/18/2016",
+					"8/22/2016", "This is a goal to help you buy the perfect present for your mom",
 					["Smart1","Smart2","Smart3","Smart4"]];
 
-var exampleGoal2 = ["Back To work", "8/10/2016",
-					"8/12/2016", "This is a goal I'm setting to help me complete my goals for work.",
+var exampleGoal2 = ["Buy Decor", "8/18/2016",
+					"8/28/2016", "This is a goal to help you buy the perfect decor for your home.",
 					["Smart1","Smart2","Smart3","Smart4"]];
 
-var exampleGoal3 = ["Love Your Self", "8/10/2016",
-					"8/12/2016", "This is a goal to help you love your self.",
+var exampleGoal3 = ["Plan Friend's Birthday", "8/18/2016",
+					"8/25/2016", "This is a goal to help you plan your friend's birthday.",
 					["Smart1","Smart2","Smart3","Smart4"]];
 
-var exampleGoal4 = ["Love Your Mom", "8/10/2016",
-					"8/12/2016", "This is a goal to help you love your Mom.",
+var exampleGoal4 = ["Prepare for the Marathon", "8/18/2016",
+					"8/21/2016", "This is a goal to help you prepare for the marathon.",
 					["Smart1","Smart2","Smart3","Smart4"]];
+
 
 var goals = [exampleGoal1,exampleGoal2,exampleGoal3,exampleGoal4];
 
