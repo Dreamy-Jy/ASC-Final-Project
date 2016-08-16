@@ -1,15 +1,15 @@
 <!DOCTYPE HTML>
 <html>
-
 	<head>
-		<title>Main Page</title>
+		<title>Time Frame</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
 		<link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Burning-Man.svg/2000px-Burning-Man.svg.png" />
 	    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
 	   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-	   <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+	    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
 	   <script type="text/javascript">
 			$(window).load(function(){
 				$('div.description').each(function(){
@@ -26,27 +26,70 @@
 	</script>
 	<script type="text/javascript" src="js/jquery.mmenu.js"></script>
 		<script type="text/javascript">
+			//	The menu on the left
 			$(function() {
 				$('nav#menu-left').mmenu();
 			});
 		</script>
+	<!---start-blog---->
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio1',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio1').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -2}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+	});	
+	</script>
+	<!---//start-blog---->
 	</head>
-
 	<body>
-
 		<div class="wrap">
+			<!---start-header---->
 			<div id="page">
 					<div id="header">
 						<a class="navicon" href="#menu-left"> </a>
-						<a href="goal.html"><img class="addButton" src="https://cdn3.iconfinder.com/data/icons/glyph/227/Button-Add-1-128.png" alt=""></a>
 						<div class="logo">
-						<a href="main.html"><img src="https://app.organizer.com/img/organizer_logo.png" style="height:38px" alt="" /></a>
+						<a href="settings.html"><img src="https://app.organizer.com/img/organizer_logo.png" style="height:38px" alt="" /></a>
 						</div>
 					</div>
 					<nav id="menu-left">
 						<ul>
-							<li><a><img class="img-circle" src="http://i.imgur.com/QnbbvL8.jpg" alt=""></a>
-							<h1>Erik Tacam</h1></li>
 							<li><a href="main.html"><img src="images/home-icon.png" alt="" />Home</a></li>
 							<li><a href="settings.html"><img src="images/blog.png" alt="" />Settings</a></li>
 							<li><a href="contact.html"><img src="images/tel.png" alt="" />Contact</a></li>
@@ -54,48 +97,23 @@
 							<div class="clear"> </div>
 						</ul>
 					</nav>
-				</div> 
-
-		<div class="slider">
-		</div>
-		<div id="content" class="content">
-		</div>
-		<div class="text-monials">
-
-			<div class="wrap">
-				<ul>
-					<li> </li>
-					<li><p>Desire is the key to motivation, but it's determination and commitment to an unrelenting pursuit of your goal - a commitment to excellence - that will enable you to attain the success you seek. ~Mario Andretti</p> </li>
-					<li> </li>
-					<div class="clear"> </div>
-				</ul>
-			</div>
-
-		</div>
-		</div>
-		<div class="footer"> 
-			<div class="wrap"> 
+				</div>
+		<!---//End-header---->
+		<!---start-content---->
+		<!---start-blog---->
+		<div class="blog">
+		<link rel="stylesheet" type="text/css" href="css/goal.css">
+				<h4>What is the time frame for your goal?</h4>
+				<input type="text" placeholder="mm/dd/yyyy - mm/dd/yyyy">
 				<div class="footer-right">
 					<p>Created by: Erik Tacam, Ethan Rodriguez, Jordane Thomas</p>
 				</div>
 				<div class="clear"> </div>
-				</div>
+			</div>
 		</div>
-
-		<script type="text/javascript" src="js/load.js"></script>
-		<script type="text/javascript">
-	   	/*
-	   	/*
-		$(document).ready():
-		This function runs these responsablity when the page is ready
-
-		1. it will load the goals from their file(s) to arrays holding the data to
-		   an array holding those arrays.
-
-		2. process the goals array and push the data into the main.html
-		*/
-		$(document).ready(pushAllLoadedGoalsToMainPage(goals, 'content', true));
-	    </script>
+		<!---//End-footer---->
+		<!---//End-wrap---->
+		 </div>
 	</body>
 </html>
 
