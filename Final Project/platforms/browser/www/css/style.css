@@ -1,11 +1,9 @@
-/* reset */
 html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,dl,dt,dd,ol,nav ul,nav li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline;}
 article, aside, details, figcaption, figure,footer, header, hgroup, menu, nav, section {display: block;}
 ol,ul{list-style:none;margin:0px;padding:0px;}
 blockquote,q{quotes:none;}
 blockquote:before,blockquote:after,q:before,q:after{content:'';content:none;}
 table{border-collapse:collapse;border-spacing:0;}
-/* start editing from here */
 a{text-decoration:none;}
 .txt-rt{text-align:right;}/* text align right */
 .txt-lt{text-align:left;}/* text align left */
@@ -20,7 +18,6 @@ a{text-decoration:none;}
 nav.vertical ul li{	display:block;}/* vertical menu */
 nav.horizontal ul li{	display: inline-block;}/* horizontal menu */
 img{max-width:100%;}
-/*end reset*/
 @font-face {
     font-family: 'permianslabseriftypefaceRg';
     src: url('../fonts/PermianSlabSerifTypeface-webfont.eot');
@@ -35,46 +32,15 @@ body{
 	font-family: 'permianslabseriftypefaceRg';
 	background:#FFF;
 }
-/*---start-wrap----*/
 .wrap{
 }
 .header {
 	padding: 1.5em 0 3em 0;
 }
-/*---
-.top-nav{
-	float:right;
-}
-.top-nav ul li{
-	display:inline-block;
-	padding: 1.2em 1em;
-}
-.top-nav ul li:first-child a:before{
-	content: url(../images/home-icon.png) no-repeat 50%;
-	vertical-align: sub;
-}
-.top-nav ul li a{
-	color: #222;
-	font-family: 'permianslabseriftypefaceRg';
-	display: block;
-	transition:0.5s all;
-	-webkit-transition:0.5s all;
-	-moz-transition:0.5s all;
-	-o-transition:0.5s all;
-}
-.top-nav ul li a:hover{
-	color:#86C840;
-}
-.top-nav ul li.active a{
-	background: url(../images/active-pointer.png) no-repeat 50% 100%;
-	padding-bottom: 15px;
-}
-----*/
-/*--mmenu-start---*/
 .logo a{
 	margin-top:5px;
 	display:block;
-	margin-left: 60px;
+	margin: 0px 40px;
 }
 .addButton {
 	margin-top: 5px;
@@ -151,8 +117,6 @@ nav ul h1{
 {
 	padding: 12px;
 }
-/*--//End-mmenu-start---*/
-/*---start-slider-banner----*/
 .slider{
 	background:#F7F7F7;
 	padding: 3em 0 1.5em 0;
