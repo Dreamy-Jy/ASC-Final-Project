@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Description</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+		</script>
+		<link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Burning-Man.svg/2000px-Burning-Man.svg.png" />
+	    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+	   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	    <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
+	   <script type="text/javascript">
+			$(window).load(function(){
+				$('div.description').each(function(){
+					$(this).css('display', 'block');
+				});
+				
+				$('div.content-top-grid').hover(function(){
+					$(this).children('.description').stop().fadeTo(500, 1);
+				},function(){
+					$(this).children('.description').stop().fadeTo(500, 0);
+				});
+				
+			});
+	</script>
+	<script type="text/javascript" src="js/jquery.mmenu.js"></script>
+		<script type="text/javascript">
+			//	The menu on the left
+			$(function() {
+				$('nav#menu-left').mmenu();
+			});
+		</script>
+	<!---start-blog---->
+	<script type="text/javascript" src="js/jquery.easing.min.js"></script>	
+	<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+	<script type="text/javascript">
+	$(function () {
+		
+		var filterList = {
+		
+			init: function () {
+			
+				// MixItUp plugin
+				// http://mixitup.io
+				$('#portfoliolist').mixitup({
+					targetSelector: '.portfolio1',
+					filterSelector: '.filter',
+					effects: ['fade'],
+					easing: 'snap',
+					// call the hover effect
+					onMixEnd: filterList.hoverEffect()
+				});				
+			
+			},
+			
+			hoverEffect: function () {
+			
+				// Simple parallax effect
+				$('#portfoliolist .portfolio1').hover(
+					function () {
+						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
+						$(this).find('img').stop().animate({top: -2}, 500, 'easeOutQuad');				
+					},
+					function () {
+						$(this).find('.label').stop().animate({bottom: -40}, 200, 'easeInQuad');
+						$(this).find('img').stop().animate({top: 0}, 300, 'easeOutQuad');								
+					}		
+				);				
+			
+			}
+
+		};
+		
+		// Run the show!
+		filterList.init();
+	});	
+	</script>
+	<!---//start-blog---->
+	</head>
+	<body>
+		<div class="wrap">
+			<!---start-header---->
+			<div id="page">
+					<div id="header">
+						<a class="navicon" href="#menu-left"> </a>
+						<div class="logo">
+						<a href="settings.html"><img src="https://app.organizer.com/img/organizer_logo.png" style="height:38px" alt="" /></a>
+						</div>
+					</div>
+					<nav id="menu-left">
+						<ul>
+							<li><a href="main.html"><img src="images/home-icon.png" alt="" />Home</a></li>
+							<li><a href="settings.html"><img src="images/blog.png" alt="" />Settings</a></li>
+							<li><a href="contact.html"><img src="images/tel.png" alt="" />Contact</a></li>
+							<li><a href="index.html"><img src="images/icon.png" alt="" />Log Out</a></li>
+							<div class="clear"> </div>
+						</ul>
+					</nav>
+				</div>
+		<!---//End-header---->
+		<!---start-content---->
+		<!---start-blog---->
+		<div class="blog">
+		<link rel="stylesheet" type="text/css" href="css/goal.css">
+				<h4>Describe your goal.</h4>
+				<input type="text" placeholder="mm/dd/yyyy - mm/dd/yyyy">
+				<div class="footer-right">
+					<p>Created by: Erik Tacam, Ethan Rodriguez, Jordane Thomas</p>
+				</div>
+				<div class="clear"> </div>
+			</div>
+		</div>
+		<!---//End-footer---->
+		<!---//End-wrap---->
+		 </div>
+	</body>
+</html>
