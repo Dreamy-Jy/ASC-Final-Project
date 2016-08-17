@@ -1,3 +1,5 @@
+/// load.js 2
+
 //----------------------getters, setters, and checker of the data-------------------------------//
 function getName(list){
 	return list[0];
@@ -74,8 +76,18 @@ var exampleGoal4 = ["Prepare for the Marathon", "8/18/2016",
 					"8/21/2016", "This is a goal to help you prepare for the marathon.",
 					["Smart1","Smart2","Smart3","Smart4"]];
 
+var eriksLoveGoal = [
+					 "Success in School and Beyond","9/8/2016",
+					 "6/28/2017","Help me get a 95 gpa ,and a Girl.",
+					 	[
+					 	 "Select classes I can to the best in, by 9/20",
+					 	 "Scout grade for all the single ladies",
+					 	 "Set 25 mins a side to study for each class a day",
+					 	 "Find one girl you really connect with and start chating on FaceBook"
+					 	]
+					]
 
-var goals = [exampleGoal1,exampleGoal2,exampleGoal3,exampleGoal4];
+var goals = [exampleGoal1,exampleGoal2,exampleGoal3,exampleGoal4,eriksLoveGoal ];
 
 
 /*FormateToHTML()
@@ -91,7 +103,7 @@ function FormateToHTML(goal) {
 	var end = getEnd(goal);
 	var decription = getDescription(goal);
 	/*var smart = will become the variable that get SMART goal once I figure out how to get it*/
-	return ('<div class="content-top-grids-box"><div class="content-top-grid"></div><div class="content-top-grid-title"><div class="content-top-grid-title-left"><h4><a href="viewGoal.html">'+name+'</a></h4><ul><li><a href="viewGoal.html">'+start+'-'+end+'</a></li><li><a href="viewGoal.html">Goal</a></li></ul></div><div class="content-top-grid-title-right"><a href="viewGoal.html"></a></div><div class="clear"> </div></div></div>');
+	return ('<div class="content-top-grids-box"><div class="content-top-grid"></div><div class="content-top-grid-title"><div class="content-top-grid-title-left"><h4><a>'+name+'</a></h4><ul><li><a>'+start+'-'+end+'</a></li></ul></div><div class="content-top-grid-title-right"><a href="presetGoal.html"></a></div><div class="clear"> </div></div></div>');
 }
 
 //pushes the code formated to HTML to the index.html
@@ -120,7 +132,7 @@ function pushAllLoadedGoalsToMainPage(list_Of_Goals, put_In, idOrClass){
 	This block of code puts the header on the list everytime goals are 
 	loaded to the main page.
 	*/
-	var header = '<div class="content-top-grids"><div class="content-top-grids" ><div class="wrap"><div class="content-top-header"><h3>Goals</h3><p>Organize and complete your task!</p></div><div class="clear"> </div>';
+	var header = '<div class="content-top-grids"><div class="content-top-grids" ><div class="wrap"><div class="content-top-header"><h3>Goals</h3></div><div class="clear"></div>';
 	pushToMainPage(header,put_In,idOrClass);
 
 	/*
@@ -134,6 +146,6 @@ function pushAllLoadedGoalsToMainPage(list_Of_Goals, put_In, idOrClass){
 	This block of code puts the ender on the list everytime goals are 
 	loaded to the main page. 
 	 */
-	 var ender = '<div class="clear"> </div><a class="btn" href="iconsingle.html">More Goals</a></div></div>';
+	 var ender = '<div class="clear"> </div></div></div>';
 	 pushToMainPage(ender,put_In,idOrClass);
 }
