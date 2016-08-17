@@ -2,11 +2,15 @@
 <html>
 
 	<head>
-		<title>Main Page</title>
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
-		<link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Burning-Man.svg/2000px-Burning-Man.svg.png" />
-	    <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+	   <title>Main Page</title>
+	   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	   <script type="application/x-javascript"> 
+		addEventListener("load", function(){setTimeout(hideURLbar, 0);}, false); 
+		function hideURLbar(){window.scrollTo(0,1);}
+	   </script>
+	   <link rel="shortcut icon" type="image/x-icon" href="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f5/Burning-Man.svg/2000px-Burning-Man.svg.png" />
+	   <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+
 	   <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
 	   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
 	   <link type="text/css" rel="stylesheet" href="css/jquery.mmenu.all.css" />
@@ -23,11 +27,11 @@
 				});
 				
 			});
-	</script>
+		</script>
 	<script type="text/javascript" src="js/jquery.mmenu.js"></script>
 		<script type="text/javascript">
 			$(function() {
-				$('nav#menu-left').mmenu();
+				$('nav#menu-left').menu();
 			});
 		</script>
 	</head>
@@ -38,7 +42,7 @@
 			<div id="page">
 					<div id="header">
 						<a class="navicon" href="#menu-left"> </a>
-						<a href="goal.html"><img class="addButton" src="https://cdn3.iconfinder.com/data/icons/glyph/227/Button-Add-1-128.png" alt=""></a>
+						<a href="https://www.google.com/"><img class="addButton" src="https://cdn3.iconfinder.com/data/icons/glyph/227/Button-Add-1-128.png" alt=""></a>
 						<div class="logo">
 						<a href="main.html"><img src="https://app.organizer.com/img/organizer_logo.png" style="height:38px" alt="" /></a>
 						</div>
@@ -55,19 +59,24 @@
 						</ul>
 					</nav>
 				</div> 
-		<div class="slider">
-		</div>
-		<div id="content" class="content">
-		</div>
+
+		<div class="slider"></div>
+
+		<div id="content" class="content"></div>
+		
 		<div class="text-monials">
 
 			<div class="wrap">
+
 				<ul>
-					<li> </li>
-					<li><p>Desire is the key to motivation, but it's determination and commitment to an unrelenting pursuit of your goal - a commitment to excellence - that will enable you to attain the success you seek. ~Mario Andretti</p> </li>
-					<li> </li>
+					<li>
+						<p>
+							Desire is the key to motivation, but it's determination and commitment to an unrelenting pursuit of your goal - a commitment to excellence - that will enable you to attain the success you seek. ~Mario Andretti
+						</p> 
+					</li>
 					<div class="clear"> </div>
 				</ul>
+
 			</div>
 
 		</div>
@@ -77,11 +86,11 @@
 				<div class="footer-right">
 					<p>Created by: Erik Tacam, Ethan Rodriguez, Jordane Thomas</p>
 				</div>
-				<div class="clear"> </div>
+				<div class="clear"></div>
 				</div>
 		</div>
-
-		<script type="text/javascript" src="js/load2.js"></script>
+<!--
+		<script type="text/javascript" src="js/load3StaticGoal.js"></script>
 		<script type="text/javascript">
 	   	/*
 	   	/*
@@ -93,8 +102,8 @@
 
 		2. process the goals array and push the data into the main.html
 		*/
-		$(document).ready(pushAllLoadedGoalsToMainPage(goals, 'content', true));
-	    </script>
+		$(document).ready(pushAllLoadedGoalsToMainPage(smartgoals, 'content', true));
+	    </script>-->
 	</body>
-</html>
 
+</html>
