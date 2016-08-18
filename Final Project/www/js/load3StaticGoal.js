@@ -14,7 +14,7 @@ function giveTime(list, input){
 
 
 
-var mainName = "Success in School and Beyond";
+var mainName = "Success in School";
 var mainTime = "9/8/2016 - 6/28/2017";
 var mainDecription = "My plan is to get a 95 GPA.";
 
@@ -52,7 +52,7 @@ function pushAllLoadedGoalsToMainPage(list_Of_Goals, put_In, idOrClass){
 	resetHMTL(put_In,idOrClass);
 
 
-	var header = '<div class="content-top-grids"><div class="content-top-grids" ><div class="wrap"><div class="content-top-header"><h3>Success in School and Beyond</h3><p>9/8/2016 - 6/28/2017</p><p style="font-size: 15px; color: #000000;">My plan is to get a 95 GPA.</p></div><div class="clear"></div>';
+	var header = '<div class="content-top-grids"><div class="content-top-grids" ><div class="wrap"><div class="content-top-header"><h3>Success in School</h3><p>9/8/2016 - 6/28/2017</p><p style="font-size: 15px; color: #000000;">My plan is to get a 95 GPA.</p></div><div class="clear"></div>';
 	pushToMainPage(header,put_In,idOrClass);
 
 	for (var i = 0; i <= list_Of_Goals.length-1; i++) {

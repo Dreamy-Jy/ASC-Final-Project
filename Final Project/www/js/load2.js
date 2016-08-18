@@ -77,14 +77,8 @@ var exampleGoal4 = ["Prepare for the Marathon", "8/18/2016",
 					["Smart1","Smart2","Smart3","Smart4"]];
 
 var eriksLoveGoal = [
-					 "Success in School and Beyond","9/8/2016",
-					 "6/28/2017","Help me get a 95 gpa ,and a Girl.",
-					 	[
-					 	 "Select classes I can to the best in, by 9/20",
-					 	 "Scout grade for all the single ladies",
-					 	 "Set 25 mins a side to study for each class a day",
-					 	 "Find one girl you really connect with and start chating on FaceBook"
-					 	]
+					 "Success in School","9/8/2016",
+					 "6/28/2017"
 					]
 
 var goals = [exampleGoal1,exampleGoal2,exampleGoal3,exampleGoal4,eriksLoveGoal ];
