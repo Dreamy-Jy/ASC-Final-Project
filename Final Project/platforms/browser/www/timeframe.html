@@ -26,7 +26,6 @@
 	</script>
 	<script type="text/javascript" src="js/jquery.mmenu.js"></script>
 		<script type="text/javascript">
-			//	The menu on the left
 			$(function() {
 				$('nav#menu-left').mmenu();
 			});
@@ -41,14 +40,11 @@
 		
 			init: function () {
 			
-				// MixItUp plugin
-				// http://mixitup.io
 				$('#portfoliolist').mixitup({
 					targetSelector: '.portfolio1',
 					filterSelector: '.filter',
 					effects: ['fade'],
 					easing: 'snap',
-					// call the hover effect
 					onMixEnd: filterList.hoverEffect()
 				});				
 			
@@ -56,7 +52,6 @@
 			
 			hoverEffect: function () {
 			
-				// Simple parallax effect
 				$('#portfoliolist .portfolio1').hover(
 					function () {
 						$(this).find('.label').stop().animate({bottom: 0}, 200, 'easeOutQuad');
@@ -72,26 +67,23 @@
 
 		};
 		
-		// Run the show!
 		filterList.init();
 	});	
 	</script>
-	<!---//start-blog---->
 	</head>
 	<body>
 		<div class="wrap">
-			<!---start-header---->
 			<div id="page">
 					<div id="header">
 						<a class="navicon" href="#menu-left"> </a>
 						<div class="logo">
-						<a href="main.html"><img src="https://app.organizer.com/img/organizer_logo.png" style="height:38px" alt="" /></a>
+						<a href="main.html"><img src="http://i.imgur.com/Yi3BikO.png" style="height:38px" alt="" /></a>
 						</div>
 					</div>
 					<nav id="menu-left">
 						<ul>
-							<li><a><img class="img-circle" src="http://i.imgur.com/QnbbvL8.jpg" alt=""></a>
-							<h1>Erik Tacam</h1></li>
+							<li><a><img class="img-circle" src="http://i.imgur.com/JiSlkIQ.jpg" alt=""></a>
+							<h1>Ethan Rodriguez/h1></li>
 							<li><a href="main.html"><img src="images/home-icon.png" alt="" />Home</a></li>
 							<li><a href="settings.html"><img src="images/blog.png" alt="" />Settings</a></li>
 							<li><a href="contact.html"><img src="images/tel.png" alt="" />Contact</a></li>
@@ -100,13 +92,10 @@
 						</ul>
 					</nav>
 				</div>
-		<!---//End-header---->
-		<!---start-content---->
-		<!---start-blog---->
 		<div class="blog">
 		<link rel="stylesheet" type="text/css" href="css/goal.css">
 				<h4>What is the time frame for your goal?</h4>
-				<input type="text" placeholder="mm/dd/yyyy - mm/dd/yyyy">
+				<input type="text" placeholder="Ex. 8/18/2016-8/18/2016">
 				<a class="btn" href="description.html">Next</a>
 				<div class="footer-right">
 					<p>Created by: Erik Tacam, Ethan Rodriguez, Jordane Thomas</p>
@@ -114,8 +103,6 @@
 				<div class="clear"> </div>
 			</div>
 		</div>
-		<!---//End-footer---->
-		<!---//End-wrap---->
 		 </div>
 	</body>
 </html>
